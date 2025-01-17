@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <title>Muhammad Sarosh Tahir</title>
+
+
+</head>
+
+<body>
+    <!-- header -->
+       <section class="header">
+        <nav>
+            <div class="skill-icons">
+                <img src="img\python-logo-only.png" alt="Skill 1" title="Skill 1">
+                <img src="img\web_scraper.png" alt="Skill 2" title="Skill 2">
+                <img src="img\html-css-js-programming-language-developing-concept-vector.jpg" alt="Skill 3" title="Skill 3">
+                <img src="img\ai.webp" alt="Skill 4" title="Skill 4">
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#qualification">Qualification</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <button class="btn-1 btn-ul"><a href="#contact"> Hire Me</a> <img src="img/arrow.png" alt="Arrow"></button>
+            </div>
+            <button class="btn-1 btn-b"><a href="#contact"> Hire Me</a> ></button>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- hero section -->
+    <div class="section" id="home">
+        <div class="content-section">
+                    <div class="content">
+                        <h1>Hi, I’m <span>Muhammad Sarosh Tahir</span></h1>
+                        <p class="hero-p">I am an <span class="dynamic-text">AI Engineer</span></p>
+                        <p>I develop advanced AI solutions that seamlessly integrate innovative design with robust functionality. Let's collaborate to bring your vision to life.</p>
+                        <button class="btn-2"><a href="#contact"> Hire Me <img src="img/arrow.png" alt=""></a></button>
+                    </div>
+                </div>
+            </div>
+        <div class="image-section">
+            <img src="img/main.png" alt="">
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-section">
+            <div class="about-content">
+                <h1>About <span> Me</span></h1>
+                <p>I'm Muhammad Sarosh Tahir, an AI specialist passionate about Machine Learning, Deep Learning, and developing intelligent systems.
+                    My expertise includes deciphering complex data, training neural networks, and optimizing algorithms. 
+                    I actively contribute to open-source projects, share knowledge through tutorials and talks, and am skilled in mobile app development using Flutter and Java.
+                    Let's collaborate to push the boundaries of AI and create a smarter future!
+                </p>
+                <p>
+                    Ready to elevate your online presence? If you're looking to embark on a journey of digital
+                    transformation, don't hesitate to reach out. Together, we can turn your vision into reality and
+                    create something truly extraordinary in the digital landscape. Let's connect and make something
+                    amazing happen!
+                </p>
+                <!-- <button class="btn-1" > Download CV</button> -->
+                <a class="cv-btn" href="https://github.com/Muhammadsaroshtahir/CV/blob/main/MY_f_Resume.pdf" download="My Resume">
+                     <i class="fa fa-download" aria-hidden="true"></i>Download CV</a>
+            </div>
+        </div>
+        <div class="about-image-section">
+            <img src="img\cv.png" alt="">
+        </div>
+    </section>
+
+
+
+
+<!-- Experience Section -->
+<section class="experience-section" id="experience">
+    <h1>My Experience</h1>
+    <div class="certificates-container">
+        <div class="certificate-item" onmouseover="animateCertificate(this)" onmouseout="resetAnimation(this)">
+            <h2>Data_automation</h2>
+            <p><strong>Institution:</strong> Rixty_Soft</p>
+            <a href="https://yourcertificatelink1.com" target="_blank" class="certificate-link">View Certificate</a>
+        </div>
+        <div class="certificate-item" onmouseover="animateCertificate(this)" onmouseout="resetAnimation(this)">
+            <h2>Machine Learning</h2>
+            <p><strong>Institution:</strong> Code_Aplha</p>
+            <a href="https://yourcertificatelink2.com" target="_blank" class="certificate-link">View Certificate</a>
+        </div>
+        <div class="certificate-item" onmouseover="animateCertificate(this)" onmouseout="resetAnimation(this)">
+            <h2>Codesoft</h2>
+            <p><strong>Institution:</strong> Artificial Intelligence</p>
+            <a href="https://yourcertificatelink3.com" target="_blank" class="certificate-link">View Certificate</a>
+        </div>
+    </div>
+</section>
+
+<!--project section-->
+<section class="projects-section" id="projects">
+    <h1>My Projects</h1>
+    <div class="projects-container">
+        <div class="project-item" onmouseover="animateProject(this)" onmouseout="resetAnimation(this)">
+            <img src="img/Chatbot.jpg" alt="Chatbot Project" class="project-image">
+            <h2>Chat_bot</h2>
+            <p><strong>Description:</strong> Knowledge base chatbot linked with Neo4j and Flask (Prolog).</p>
+            <p><strong>Technologies:</strong> Python, WEB, Neo4j, Flask</p>
+            <a href="https://github.com/Muhammadsaroshtahir/Soshi_chatbot" target="_blank" class="project-link">View Live</a>
+        </div>
+        <div class="project-item" onmouseover="animateProject(this)" onmouseout="resetAnimation(this)">
+            <img src="img/covid.jpg" alt="COVID Detection" class="project-image">
+            <h2>Covid_detection</h2>
+            <p><strong>Description:</strong> COVID detection using X-ray images with CNN and YOLO for defect detection.</p>
+            <p><strong>Technologies:</strong> Python, CNN, Machine/Deep Learning</p>
+            <a href="https://github.com/Muhammadsaroshtahir/Covid_detection" target="_blank" class="project-link">View Live</a>
+        </div>
+        <div class="project-item" onmouseover="animateProject(this)" onmouseout="resetAnimation(this)">
+            <img src="img/ilets.webp" alt="IELTS Mock Test" class="project-image">
+            <h2>Ielts_mock_test</h2>
+            <p><strong>Description:</strong> NLP project using Hugging Face pipelines to generate questions and provide a band score.</p>
+            <p><strong>Technologies:</strong> Python, NLP, Hugging Face</p>
+            <a href="https://github.com/TheAbdulMuqeet/IELTS-Mock-Test" target="_blank" class="project-link">View Live</a>
+        </div>
+        <div class="project-item" onmouseover="animateProject(this)" onmouseout="resetAnimation(this)">
+            <img src="img/image classfication.webp" alt="Image Classification" class="project-image">
+            <h2>Images Classification</h2>
+            <p><strong>Description:</strong> Image classification using CNN, ResNet50, and VGG16 with Flask.</p>
+            <p><strong>Technologies:</strong> Python, Deep Learning, Transfer Learning</p>
+            <a href="https://github.com/Muhammadsaroshtahir/Object-Classfiation" target="_blank" class="project-link">View Live</a>
+        </div>
+        <div class="project-item" onmouseover="animateProject(this)" onmouseout="resetAnimation(this)">
+            <img src="img/ESP.png" alt="Knowledge Base GPS Car" class="project-image">
+            <h2>Knowledge base GPS Car</h2>
+            <p><strong>Description:</strong> ESP32-based car with sensors, integrated with Neo4j and a chatbot for command execution.</p>
+            <p><strong>Technologies:</strong> Python, ESP</p>
+            <a href="https://github.com/Muhammadsaroshtahir/CodSoft" target="_blank" class="project-link">View Live</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section class="skills-main" id="skills">
+        <div class="skills-content">
+            <h1>Skills <span>&</span> Qualifications</h1>
+            <p>My skills cover a vast array of domains, ensuring I am always ready to meet the needs of any project.</p>
+            <h2 class="tech-skill">Technical Skills</h2>
+        </div>
+    </section>
+
+    <section class="progress-section">
+        <div class="progress-row">
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Machine Learning</h5>
+                    <h5>96%</h5>
+                </div>
+                <progress value="96" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Deep Learning</h5>
+                    <h5>90%</h5>
+                </div>
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Computer Vision</h5>
+                    <h5>80%</h5>
+                </div>
+                <progress value="80" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Natural Language Processing</h5>
+                    <h5>90%</h5>
+                </div>
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Python</h5>
+                    <h5>90%</h5>
+                </div>
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Web Scraping</h5>
+                    <h5>90%</h5>
+                </div>
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Web Development</h5>
+                    <h5>90%</h5>
+                </div>
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>C++</h5>
+                    <h5>75%</h5>
+                </div>
+                <progress value="75" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>OOP</h5>
+                    <h5>70%</h5>
+                </div>
+                <progress value="70" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Flutter</h5>
+                    <h5>70%</h5>
+                </div>
+                <progress value="70" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>Java (Kotlin)</h5>
+                    <h5>50%</h5>
+                </div>
+                <progress value="50" max="100"></progress>
+            </div>
+            <div class="progress-container">
+                <div class="progress-content">
+                    <h5>SQL</h5>
+                    <h5>70%</h5>
+                </div>
+                <progress value="70" max="100"></progress>
+            </div>
+        </div>
+    </section>    
+<br>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section class="education-section" id="qualification">
+        <h1>My Educational Background</h1>
+        <div class="education-container">
+            <div class="education-item">
+                <h2>BS_AI</h2>
+                <p><strong>Institute Name:</strong>University of Management and Technology, Lahore</p>
+                <p><strong>Grades:</strong> A</p>
+                <p><strong>CGPA:</strong> 3.03/4</p>
+                <p><strong>Year:</strong> 2021 - Current</p>
+            </div>
+            <div class="education-item">
+                <h2>Intermediate - FSc</h2>
+                <p><strong>Institute Name:</strong> Government Degree Collage, Burewala  </p>
+                <p><strong>Grades:</strong> A+</p>
+                <p><strong>Score:</strong> 924/1100</p>
+                <p><strong>Year:</strong> 2019 - 2021</p>
+            </div>
+            <div class="education-item">
+                <h2>Matriculation</h2>
+                <p><strong>Institute Name:</strong> Resource Academia International School System, Burewala</p>
+                <p><strong>Grades:</strong> A+</p>
+                <p><strong>Score:</strong> 789/1100</p>
+                <p><strong>Year:</strong> 2017 - 2019</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact me -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <section class="contact-section" id="contact">
+        <div class="contact-form">
+            <h2>Love my <span>Work?</span></h2>
+            <form>
+                <div class="form-row">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <select name="service" required>
+                        <option value="" disabled selected>Service</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Full Stack</option>
+                    </select>
+                </div>
+                <div class="form-row-2">
+                    <input type="text" name="budget" placeholder="How much you are willing to spend on this project?"
+                        required>
+                </div>
+                <div class="form-row ">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="footer1">
+                <a href=""><img src="img/logo.jpg" alt=""></a>
+                <div class="fa-class">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>muhammadsarosh.ai@gmail.com</p>
+                </div>
+                <div class="fa-class">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+923336315257</p>
+                </div>
+            </div>
+            <div class="footer2">
+                <h2>General</h2>
+                <ul>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h2>Work</h2>
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">My_Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="#qualification">Education</a></li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <h2>Follow my Work</h2>
+                <a href="https://www.facebook.com/muhammad.sarosh.75"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/muhammad_sarosh2002/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/muhammad-sarosh-tahir-512371227/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Muhammadsaroshtahir"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
