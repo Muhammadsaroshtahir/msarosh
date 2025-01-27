@@ -445,7 +445,7 @@ nav .fa {
 /* Styling for the experience section */
 .experience-section {
     padding: 40px;
-    background-color: #f8f9fa;
+    background-color: #fffbed;
     text-align: center;
 }
 
@@ -468,7 +468,7 @@ nav .fa {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #ED700B;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -476,7 +476,7 @@ nav .fa {
 .certificate-item h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #4CAF50;
+    color: #ffffff;
 }
 
 .certificate-item p {
@@ -561,26 +561,24 @@ nav .fa {
 
 /* projects section end here*/
 
-/* skills section starts */
+/* Skills section starts */
 .skills-content {
     text-align: center;
     margin-top: 50px;
 }
-.skills-content h1{
+.skills-content h1 {
     font-size: 2rem;
     font-weight: bold;
 }
-.skills-content h1 span{
+.skills-content h1 span {
     color: #ED700B;
 }
-.skills-content .tech-skill{
+.skills-content .tech-skill {
     text-align: left;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: -20px;
 }
-
-
 /* skills section ends here */
 
 /* Blog Section Styling */
@@ -991,4 +989,89 @@ progress::-webkit-progress-value {
         justify-content: center;
         }
  }
+
+/* Certification Section Styling */
+.certification-section {
+    background-color: #FFFBEB; /* Matching page background */
+    padding: 50px 20px;
+    margin: 50px auto;
+    text-align: center;
+    border-top: 5px solid #ED700B; /* Adds a thematic divider at the top */
+    border-bottom: 5px solid #ED700B;
+}
+
+.certification-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.certification-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificate-item {
+    background-color: #ef6f0b; /* White card background */
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item h2 {
+    font-size: 1.5rem;
+    color: #ffffff; /* Highlighted header */
+    margin-bottom: 10px;
+}
+
+.certificate-item p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.certificate-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #4D670B; /* Green button */
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.certificate-link:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+.certificate-item:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Responsive Design for Certifications */
+@media (max-width: 700px) {
+    .certificates-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .certificate-item {
+        width: 90%; /* Max width for smaller screens */
+    }
+}
+
 
