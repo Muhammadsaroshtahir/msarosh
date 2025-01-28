@@ -508,7 +508,13 @@ nav .fa {
 
 
 /* project-secton start*/
-
+/* Center the h1 heading */
+#projects h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
 /* Adjust project-item styling */
 .project-item {
     width: 30%;
@@ -573,12 +579,20 @@ nav .fa {
 .skills-content h1 span {
     color: #ED700B;
 }
+/* Center the h1 heading */
+#skills h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
 .skills-content .tech-skill {
     text-align: left;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: -20px;
 }
+
 /* skills section ends here */
 
 /* Blog Section Styling */
