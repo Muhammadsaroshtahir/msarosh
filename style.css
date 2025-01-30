@@ -9,7 +9,7 @@
     font-family: poppins;
     box-sizing: border-box;
     /* border: 1px solid black; */
-    
+
 }
 
 html{
@@ -362,7 +362,7 @@ nav .fa {
 }
 .about-image-section img{
     width: 50%;
-    margin: auto; 
+    margin: auto;
 }
 .about-content h1{
     font-family: Roboto;
@@ -1042,3 +1042,58 @@ progress::-webkit-progress-value {
 }
 
 
+  /* Custom cursor main styles */
+#customCursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(237, 112, 11, 0.8); /* Stylish orange semi-transparent */
+    border: 2px solid #fff; /* White outline */
+    border-radius: 50%; /* Makes the cursor a perfect circle */
+    pointer-events: none; /* Ensure it doesn't block clicks */
+    z-index: 9999;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.1s ease-out, background-color 0.3s ease, opacity 0.2s;
+}
+
+/* Pulse animation for movement */
+#customCursor::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(237, 112, 11, 0.5); /* Faint orange outline */
+    border-radius: 50%;
+    animation: pulse 1.5s infinite; /* Smooth pulsing effect */
+    pointer-events: none; /* Do not block interactions */
+}
+
+/* Hover effect for interactive elements */
+button:hover ~ #customCursor,
+a:hover ~ #customCursor {
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up cursor on hover */
+    background-color: #45a049; /* Change color to green */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add glowing effect */
+}
+
+/* Click feedback animation */
+:root:active #customCursor {
+    transform: translate(-50%, -50%) scale(0.8); /* Scale down briefly on click */
+    background-color: #f15304; /* Bright red on click */
+}
+
+/* Pulse animation keyframes */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

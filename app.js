@@ -102,3 +102,27 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             alert("An error occurred. Please try again.");
         });
 });
+
+
+
+ const toggleButton = document.getElementById("darkModeToggle");
+
+    // Check localStorage for saved theme preferences
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleButton.textContent = "Light Mode";
+    }
+
+    toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Save the user's preference in localStorage
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            toggleButton.textContent = "Light Mode";
+        } else {
+            localStorage.setItem("theme", "light");
+            toggleButton.textContent = "Dark Mode";
+        }
+    });
