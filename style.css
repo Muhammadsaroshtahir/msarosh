@@ -1041,48 +1041,52 @@ progress::-webkit-progress-value {
     }
 }
 
+/* Hide the default cursor for the entire page */
+body {
+    cursor: none; /* Hides the default arrow cursor */
+}
 
-  /* Custom cursor main styles */
+/* Custom cursor main styles */
 #customCursor {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: rgba(237, 112, 11, 0.8); /* Stylish orange semi-transparent */
-    border: 2px solid #fff; /* White outline */
-    border-radius: 50%; /* Makes the cursor a perfect circle */
+    background-color: rgba(237, 112, 11, 0.9); /* Stylish orange */
+    border: 2px solid #fff; /* White border */
+    border-radius: 50%; /* Makes it a perfect circle */
     pointer-events: none; /* Ensure it doesn't block clicks */
-    z-index: 9999;
+    z-index: 9999; /* Makes sure it's on the topmost layer */
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.1s ease-out, background-color 0.3s ease, opacity 0.2s;
 }
 
-/* Pulse animation for movement */
+/* Pulse animation for additional effect */
 #customCursor::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 2px solid rgba(237, 112, 11, 0.5); /* Faint orange outline */
+    border: 2px solid rgba(237, 112, 11, 0.5); /* Light orange border for a glowing trail */
     border-radius: 50%;
-    animation: pulse 1.5s infinite; /* Smooth pulsing effect */
-    pointer-events: none; /* Do not block interactions */
+    animation: pulse 1.5s infinite; /* Smooth pulse effect */
+    pointer-events: none; /* Ensure it does not block user interactions */
 }
 
-/* Hover effect for interactive elements */
+/* Hover effect for interactive elements like buttons or links */
 button:hover ~ #customCursor,
 a:hover ~ #customCursor {
-    transform: translate(-50%, -50%) scale(1.5); /* Scale up cursor on hover */
-    background-color: #45a049; /* Change color to green */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add glowing effect */
+    transform: translate(-50%, -50%) scale(1.5); /* Enlarges on hover */
+    background-color: #45a049; /* Changes to green for feedback */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adds glow */
 }
 
-/* Click feedback animation */
+/* Click effect */
 :root:active #customCursor {
-    transform: translate(-50%, -50%) scale(0.8); /* Scale down briefly on click */
+    transform: translate(-50%, -50%) scale(0.8); /* Shrinks on click */
     background-color: #f15304; /* Bright red on click */
 }
 
-/* Pulse animation keyframes */
+/* Optional: Add keyframe animation for pulsing effect */
 @keyframes pulse {
     0% {
         transform: scale(1);

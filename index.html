@@ -17,34 +17,33 @@
 
 <body>
         <div id="customCursor"></div>
-         <script>
-    // Select the custom cursor element
+<script>
+    // Reference the custom cursor element
     const customCursor = document.getElementById("customCursor");
 
-    // Move the cursor as the mouse moves
+    // Move custom cursor with the mouse
     document.addEventListener("mousemove", (event) => {
-        // Update cursor's position to match the mouse
         customCursor.style.left = event.pageX + "px";
         customCursor.style.top = event.pageY + "px";
     });
 
-    // Add scaling effect when clicking
+    // Add visual feedback on mouse down (click effect)
     document.addEventListener("mousedown", () => {
-        customCursor.style.transform = "translate(-50%, -50%) scale(1.2)";
+        customCursor.style.transform = "translate(-50%, -50%) scale(0.8)";
     });
 
+    // Revert back to normal size on mouse up
     document.addEventListener("mouseup", () => {
         customCursor.style.transform = "translate(-50%, -50%) scale(1)";
     });
 
-    // Make sure the cursor fades in when the page loads
-    document.addEventListener("mouseenter", () => {
-        customCursor.style.opacity = "1";
+    // Optional: Hide custom cursor when the mouse leaves the viewport
+    document.addEventListener("mouseleave", () => {
+        customCursor.style.opacity = "0"; // Fade out
     });
 
-    // Hide the cursor when the mouse leaves the viewport
-    document.addEventListener("mouseleave", () => {
-        customCursor.style.opacity = "0";
+    document.addEventListener("mouseenter", () => {
+        customCursor.style.opacity = "1"; // Fade back in
     });
 </script>
     <!-- header -->
