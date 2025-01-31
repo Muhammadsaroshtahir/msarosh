@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="blog-style.css">
 </head>
 <body>
+    <div id="customCursor"></div>
+<script>
+    // Reference the custom cursor element
+    const customCursor = document.getElementById("customCursor");
+
+    // Move custom cursor with the mouse
+    document.addEventListener("mousemove", (event) => {
+        customCursor.style.left = event.pageX + "px";
+        customCursor.style.top = event.pageY + "px";
+    });
+
+    // Add visual feedback on mouse down (click effect)
+    document.addEventListener("mousedown", () => {
+        customCursor.style.transform = "translate(-50%, -50%) scale(0.8)";
+    });
+
+    // Revert back to normal size on mouse up
+    document.addEventListener("mouseup", () => {
+        customCursor.style.transform = "translate(-50%, -50%) scale(1)";
+    });
+
+    // Optional: Hide custom cursor when the mouse leaves the viewport
+    document.addEventListener("mouseleave", () => {
+        customCursor.style.opacity = "0"; // Fade out
+    });
+
+    document.addEventListener("mouseenter", () => {
+        customCursor.style.opacity = "1"; // Fade back in
+    });
+</script>
 
      <!-- header -->
        <section class="header">
